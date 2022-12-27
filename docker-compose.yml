@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  #vue App
+  http-proxy:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /app
+    ports:
+      - 8081:8081
