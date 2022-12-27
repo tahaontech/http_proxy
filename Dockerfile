@@ -8,7 +8,7 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build main.go -o /myapp
+RUN go build -o /myapp
 
 EXPOSE 8081
 
